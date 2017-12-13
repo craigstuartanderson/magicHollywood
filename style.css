@@ -1,0 +1,380 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* GlOBAL STYLES */
+
+html{
+    font-size: 62.5%;
+}
+img{ 
+    max-width:100%; 
+    opacity: 0.8;
+}
+
+body{
+    max-width: 1100px;
+    font-family: 'Cinzel', serif;
+    background-color: rgb(56, 56, 56);
+    margin: 0 auto;
+}
+
+
+/* HEADER STYLES */
+header{
+    text-align: center;
+}
+h1{
+    font-family: 'IM Fell English SC', serif;
+    text-transform: uppercase;
+    font-size: 9rem;
+    margin: 0;
+    color: beige;
+    text-shadow: 0 0 20px black, 0 0 5px white;
+}
+header h2{
+    font-size: 2rem;
+    color: beige;
+    text-shadow: 0 0 10px black;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+
+}
+ul{
+
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:visited,
+a:link{
+    color: black;
+} 
+button{
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid grey;
+    box-shadow: none;
+    font-size: 1.2rem;
+}
+/* TEMP FORMATTING & STATE STYLES */
+.border{
+    border: 2px solid brown;
+    border-radius: 2px
+}
+.hidden{
+    display: none;
+}
+
+/* MAIN STYLES */
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(177, 177, 177);
+
+    /* background-image: url('images/old-paper-7.jpg'); */
+    box-shadow: 0 0 20px grey;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 20px 0;
+    text-shadow: 0 0 5px white;
+}
+
+/* INSTRUCTIONS WINDOW STYLES */
+.instructions{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    z-index: 20;
+}
+.instructionsWindow{
+    width: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px white;
+    border-radius: 2px;
+    padding: 5px 20px;
+    margin: 250px auto;
+
+
+}
+.instructions h2{
+    font-size: 3rem;
+}
+.instructions a{
+    background: darkgray;
+    margin: 50px 0;
+    border: 1px solid white;
+    color: white;
+    font-size: 2rem;
+    padding: 5px 30px;
+    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px black;
+    position: relative;
+    bottom: -20px;
+}
+
+/* PLAYER INFO STYLES */
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 60vh;
+}
+.frame{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame img{
+    width: 80%;
+    /* border: 1px dotted black; */
+    box-shadow: 0 0 10px grey;
+    border-radius: 2px;
+}
+.actorForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.actorForm input{
+    background-color: transparent;
+    border: 1px solid grey;
+    box-shadow: none;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5px 0;
+    
+}
+.actorForm button{
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.hand{
+    height: 80px;
+    margin:10px;
+}
+.hand a{
+    font-size: 1.2rem;
+    line-height: 2;
+}
+/* PLAYING AREA STYLES */
+
+.table{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.playerOne__cardPlayed,
+.playerTwo__cardPlayed{
+    position: relative;
+}
+.rating{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 8rem;
+    color: white;
+    text-shadow: 1px 1px 10px black, 0 0 20px white;
+
+}
+.playArea{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+}
+.cardPlayedFrame{
+    width: 150px;
+    height: 190px;
+    margin: 10px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.cardPlaceholder{
+    opacity: 0.5;
+    width: 60px;
+    position: relative;
+    top: 60px;
+}
+.gameControls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gameControls a{
+    text-align: center;
+    background: darkslategray;
+    margin: 10px 10px;
+    width: 220px;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.8rem;
+    padding: 5px 30px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 1px white;
+
+}
+
+/* SCOREBOARD STYLES */
+
+.scoreboard{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.scoreboard h1{
+    font-size: 3rem;
+    margin: 10px 0;
+}
+.scoreboard input{
+    margin: 10px;
+    width: 60px;
+    border: none;
+    background-color: transparent;
+    font-size: 9rem;
+    font-family: 'IM Fell English SC', serif;
+    color: beige;
+    text-shadow: 0 0 20px black, 0 0 5px white; 
+}
+
+/* WINNER SLIDE STYLES */
+.winner{
+    background: white;
+    padding: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 0 20px;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 60vh;
+}
+.winner h3{
+    margin: 0;
+}
+
+.winnerContent{
+
+}
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(116, 116, 116);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+@media (max-width: 800px) {
+    /* main{
+        padding: 20px 10px;
+    } */
+    h3{
+        font-size: 1.5rem;
+    }
+    .player{
+        text-align: center;
+    }
+    .playerTwo{
+        align-items: flex-end;
+    }
+    .playerOne{
+        align-items: flex-start;
+    }
+    .player img{
+        /* justify-content: flex-end; */
+        width: 100%;
+        z-index: 10;
+    }
+    .playArea{
+        width: 35%;
+    }
+    .instructions h2{
+        font-size: 2rem;
+}
+}
+@media (max-width: 625px){
+    .player img{
+        width: 60%; 
+        position: relative;
+        top: -140px;
+    }
+    .player h3{
+        font-size: 1.2rem;
+        width: 150px;
+        position: relative;
+        bottom: -190px;
+    }
+    main{
+        background-color: rgb(56, 56, 56);
+        box-shadow: none;
+        text-shadow: 0 0 5px white;
+    }
+    input{
+        color: white;
+    }
+    .hand button{
+        color: grey;
+    }
+    .hand a{
+        color: grey;
+        text-shadow: none;
+    }
+    .gameControls a{
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 480px){
+    header h1{
+        font-size: 5rem;
+    }
+    header h2{
+        font-size: 1.5rem;
+    }
+    .player img{
+        width: 60%; 
+        position: relative;
+        top: -110px;
+    }
+    .hand a{
+        font-size: 1rem;
+        color: white;
+        text-shadow: 0 0 1px black;
+    }
+    .rating{
+        left:20px;
+    }
+    .cardPlayedFrame{
+        width: 130px;
+    }
+    .instructionsWindow{
+        width: 350px;
+    }
+    .gameControls a{
+        margin: 5px 0;
+        font-size: 1.6rem;
+        padding: 5px 15px;
+    }
+}
