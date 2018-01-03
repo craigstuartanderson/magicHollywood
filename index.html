@@ -11,9 +11,21 @@
 <body>
 
 
-<header>    
-    <h1>Magic</h1>
-    <h2>The Hollywood Edition</h2>
+<header>  
+    <div class="score scoreOne">
+        <input type="text" name="playerOneTotal" class="playerOneTotal" value="0">
+        <label for="playerOneTotal" class="playerOneScore">Score</label>
+    </div>
+    
+    <div class="title">
+        <h1>Magic</h1>
+        <h2>The Hollywood Edition</h2>
+    </div>
+    
+    <div class="score scoreTwo">
+        <input type="text" name="playerTwoTotal" class="playerTwoTotal" value="0">
+        <label for="playerTwoTotal">Score</label>
+    </div>
 </header>
 
 <main>
@@ -34,14 +46,13 @@
         <div class="frame playerOne__frame">
             <!-- SVG Created by lastspark from the Noun Project -->
             <img src="images/coatOfArms.svg" alt="player one character photo">
-            <div class="deckOverlay">
-            </div>
+            <h3>Select Your Deck</h3>
+            <p>Choose an Actor</p>
         </div>
         
-        <h3>Select Your Deck</h3>
         <form action="" class="actorForm" id="playerOneActorForm">
             <input type="text" name="entryOne" value="">
-            <!-- <button>play</button> -->
+            <button>play</button>
         </form>
         
         <div class="hand">
@@ -97,12 +108,13 @@
         <div class="frame playerTwo__frame">
             <!-- SVG Created by lastspark from the Noun Project -->
             <img src="images/coatOfArms.svg" alt="your character image">
+            <h3>Select Your Deck</h3>
+            <p>Choose an Actor</p>
         </div>
         
-        <h3>Select Your Deck</h3>
         <form action="" class="actorForm" id="playerTwoActorForm">
             <input type="text" name="entryTwo">
-            <!-- <button>Play</button> -->
+            <button>Play</button>
         </form>
         
 
@@ -124,27 +136,27 @@
 
 <!-- WINNER SECION -->
 <!-- Hidden until winner declared -->
-        <section class="winner hidden">
-            <div class="winnerContent">
-                <h3>Character</h3>
-                <h2>Wins!</h2>
-        
-                <img src="#" alt="">
-                <a href="#" class="playAgain">Play Another Deck</a>
-            </div>
-        </section>
+<section class="winner hidden">
+    <div class="winnerContent">
+        <h3>Character</h3>
+        <h2>Wins!</h2>
+
+        <img src="#" alt="">
+        <a href="#" class="playAgain">Play Another Deck</a>
+    </div>
+</section>
 
 <!-- SCOREBOARD SECTION -->
 
-<aside class="scoreboard">
-    <!-- <label for="playerOneTotal">Player One</lable> -->
+<!-- <aside class="scoreboard">
+    <label for="playerOneTotal">Player One</label>
         <input type="text" name="playerOneTotal" class="playerOneTotal" value="0">
         
     <h1>Scoreboard</h1>
     
-    <!-- <label for="playerTwoTotal">Player Two</label> -->
+    <label for="playerTwoTotal">Player Two</label>
     <input type="text" name="playerTwoTotal" class="playerTwoTotal" value="0">
-</aside>
+</aside> -->
 
 <!-- FOOTER -->
 
@@ -160,6 +172,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-<!-- <text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Valeriy</text>
-<text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text> -->
