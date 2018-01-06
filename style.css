@@ -175,7 +175,7 @@ h3{
 .actorForm{
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
 }
 .actorForm input{
     background-color: transparent;
@@ -381,11 +381,33 @@ footer{
     header h2{
         font-size: 1.5rem;
     }
+    .score label{
+        display: none;
+    }
+    .score input{
+        font-size: 5rem;
+    }
     .player img{
         width: 60%; 
     }
-    .actorForm input{
+    .actorForm{
+        bottom: -50px;
         width: 125px;
+    }
+     .actorForm h3{
+        display: none;
+    }
+    .actorForm input{
+        position: relative;
+    }
+    .frame{
+        position: relative;
+        top: -70px;
+        right: 50px;
+
+    }
+    .frame h3{
+        display: none;
     }
     .frame p{
         display: none;

@@ -66,6 +66,7 @@ actorMagic.displayCharacterOne = function (actorName, actorImage){
     $('.playerOne h3').text(actorName);
     $('.playerOne img').attr(`src`,`https://image.tmdb.org/t/p/w640${actorImage}`);
     $('#dealCardsOne').removeClass('hidden');
+    $('.playerOne__frame p').addClass('hidden');
 };    
 
 // using the actor ID from actor data, make new ajax request for all the Actors movies. 
@@ -167,7 +168,8 @@ actorMagic.getPlayerInfoTwo = function (actorChoice) {
 actorMagic.displayCharacterTwo = function (actorName, actorImage) {
     $('.playerTwo h3').text(actorName);
     $('.playerTwo img').attr(`src`, `https://image.tmdb.org/t/p/w640${actorImage}`);
-    $('#dealCardsTwo').removeClass('hidden')
+    $('#dealCardsTwo').removeClass('hidden');
+    $('.playerTwo__frame p').addClass('hidden');
 };
 
 // // using the actor ID from actor data, make new ajax request for all the Actors movies. 
